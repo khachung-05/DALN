@@ -110,4 +110,27 @@ sudo apt-get install python3-pip python3-tk -y
 
  2. Cài đặt các thư viện Python cần thiết
 pip install ultralytics opencv-python pillow numpy onnxruntime
+``
+ 7.2. Cấu hình phần cứng I2C trên Raspberry Pi
+Mở terminal trên Raspberry Pi và kích hoạt giao tiếp I2C tốc độ cao:
+
+```bash
+sudo raspi-config
+# Chọn Interface Options -> I2C -> Enable
 ```
+
+Kiểm tra địa chỉ cảm biến kết nối:
+
+```bash
+i2cdetect -y 1
+# Địa chỉ mặc định của MLX90640 thường là 0x33
+```
+
+ 7.3. Khởi chạy ứng dụng
+Chạy tệp chương trình chính:
+
+```bash
+python3 src/gui_main.py
+```
+
+*(Nếu chạy mô phỏng trên máy tính không có cảm biến, chương trình sẽ tự động đọc dữ liệu kiểm thử từ tệp video nhiệt mẫu để trình diễn toàn bộ giao diện và thuật toán AI nhận diện người).*
