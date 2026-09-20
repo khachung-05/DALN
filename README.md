@@ -96,3 +96,7 @@ Phần mềm giám sát được phát triển bằng ngôn ngữ **Python** s�
 ├── media/                   # Thư mục hệ thống tệp lưu trữ ảnh (.png) và video (.mp4)
 ├── requirements.txt         # Danh sách thư viện phụ thuộc (OpenCV, Pillow, Ultralytics, ONNX)
 └── README.md                # Tài liệu thuyết minh dự án
+
+## 7. Hướng dẫn cài đặt và Vận hành
+7.1. Cài đặt môi trường
+Hệ thống có thể chạy trực tiếp trên Raspberry Pi OS (64-bit) hoặc chạy mô phỏng trên PC / Laptop:
