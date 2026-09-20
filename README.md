@@ -83,7 +83,7 @@ Phần mềm giám sát được phát triển bằng ngôn ngữ **Python** s�
 
 ## 6. Cấu trúc thư mục mã nguồn
 
-```text
+ text
 ├── models/
 │   ├── best.pt              # Trọng số mô hình YOLOv8-Nano (PyTorch)
 │   └── best.onnx            # Mô hình đã tối ưu hóa đồ thị tính toán ONNX
@@ -100,3 +100,8 @@ Phần mềm giám sát được phát triển bằng ngôn ngữ **Python** s�
 ## 7. Hướng dẫn cài đặt và Vận hành
 7.1. Cài đặt môi trường
 Hệ thống có thể chạy trực tiếp trên Raspberry Pi OS (64-bit) hoặc chạy mô phỏng trên PC / Laptop:
+ 1. Cập nhật hệ thống và cài đặt gói bổ trợ
+sudo apt-get update
+sudo apt-get install python3-pip python3-tk -y
+ 2. Cài đặt các thư viện Python cần thiết
+pip install ultralytics opencv-python pillow numpy onnxruntime
