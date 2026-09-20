@@ -110,8 +110,9 @@ sudo apt-get install python3-pip python3-tk -y
 
  2. Cài đặt các thư viện Python cần thiết
 pip install ultralytics opencv-python pillow numpy onnxruntime
-``
- 7.2. Cấu hình phần cứng I2C trên Raspberry Pi
+
+
+7.2. Cấu hình phần cứng I2C trên Raspberry Pi
 Mở terminal trên Raspberry Pi và kích hoạt giao tiếp I2C tốc độ cao:
 
 ```bash
