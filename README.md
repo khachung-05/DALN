@@ -104,10 +104,10 @@ Phần mềm giám sát được phát triển bằng ngôn ngữ **Python** s�
 Hệ thống có thể chạy trực tiếp trên Raspberry Pi OS (64-bit) hoặc chạy mô phỏng trên PC / Laptop:
 
 ```bash
-# 1. Cập nhật hệ thống và cài đặt gói bổ trợ
+ 1. Cập nhật hệ thống và cài đặt gói bổ trợ
 sudo apt-get update
 sudo apt-get install python3-pip python3-tk -y
 
-# 2. Cài đặt các thư viện Python cần thiết
+ 2. Cài đặt các thư viện Python cần thiết
 pip install ultralytics opencv-python pillow numpy onnxruntime
 ```
