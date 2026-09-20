@@ -83,7 +83,7 @@ Phần mềm giám sát được phát triển bằng ngôn ngữ **Python** s�
 
 ## 6. Cấu trúc thư mục mã nguồn
 
-``` text
+```text
 ├── models/
 │   ├── best.pt              # Trọng số mô hình YOLOv8-Nano (PyTorch)
 │   └── best.onnx            # Mô hình đã tối ưu hóa đồ thị tính toán ONNX
@@ -91,17 +91,23 @@ Phần mềm giám sát được phát triển bằng ngôn ngữ **Python** s�
 │   ├── capture_i2c.py       # Module cấu hình và đọc mảng 768 điểm từ MLX90640 qua I2C
 │   ├── preprocess.py        # Module tiền xử lý: Min-Max, Median Filter, Bilinear Interpolation
 │   ├── inference.py         # Pipeline suy luận đa luồng ONNX Runtime trên CPU ARM
-│   ├── gui_main.py          # Giao diện chính Tkinter hiển thị màn hình 7 inch ($1024 \times 600$)
+│   ├── gui_main.py          # Giao diện chính Tkinter hiển thị màn hình 7 inch (1024x600)
 │   └── media_manager.py     # Module quản lý danh sách xem ảnh tĩnh và phát lại video
 ├── media/                   # Thư mục hệ thống tệp lưu trữ ảnh (.png) và video (.mp4)
 ├── requirements.txt         # Danh sách thư viện phụ thuộc (OpenCV, Pillow, Ultralytics, ONNX)
 └── README.md                # Tài liệu thuyết minh dự án
+```
 
 ## 7. Hướng dẫn cài đặt và Vận hành
-7.1. Cài đặt môi trường
+
+### 7.1. Cài đặt môi trường
 Hệ thống có thể chạy trực tiếp trên Raspberry Pi OS (64-bit) hoặc chạy mô phỏng trên PC / Laptop:
- 1. Cập nhật hệ thống và cài đặt gói bổ trợ
+
+```bash
+# 1. Cập nhật hệ thống và cài đặt gói bổ trợ
 sudo apt-get update
 sudo apt-get install python3-pip python3-tk -y
- 2. Cài đặt các thư viện Python cần thiết
+
+# 2. Cài đặt các thư viện Python cần thiết
 pip install ultralytics opencv-python pillow numpy onnxruntime
+```
