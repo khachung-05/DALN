@@ -83,7 +83,7 @@ Phần mềm giám sát được phát triển bằng ngôn ngữ **Python** s�
 
 ## 6. Cấu trúc thư mục mã nguồn
 
-... text
+``` text
 ├── models/
 │   ├── best.pt              # Trọng số mô hình YOLOv8-Nano (PyTorch)
 │   └── best.onnx            # Mô hình đã tối ưu hóa đồ thị tính toán ONNX
