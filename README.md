@@ -104,15 +104,15 @@ Phần mềm giám sát được phát triển bằng ngôn ngữ **Python** s�
 Hệ thống có thể chạy trực tiếp trên Raspberry Pi OS (64-bit) hoặc chạy mô phỏng trên PC / Laptop:
 
 ```bash
- 1. Cập nhật hệ thống và cài đặt gói bổ trợ
+# 1. Cập nhật hệ thống và cài đặt gói bổ trợ
 sudo apt-get update
 sudo apt-get install python3-pip python3-tk -y
 
- 2. Cài đặt các thư viện Python cần thiết
+# 2. Cài đặt các thư viện Python cần thiết
 pip install ultralytics opencv-python pillow numpy onnxruntime
+```
 
-
-7.2. Cấu hình phần cứng I2C trên Raspberry Pi
+### 7.2. Cấu hình phần cứng I2C trên Raspberry Pi
 Mở terminal trên Raspberry Pi và kích hoạt giao tiếp I2C tốc độ cao:
 
 ```bash
@@ -127,7 +127,7 @@ i2cdetect -y 1
 # Địa chỉ mặc định của MLX90640 thường là 0x33
 ```
 
- 7.3. Khởi chạy ứng dụng
+### 7.3. Khởi chạy ứng dụng
 Chạy tệp chương trình chính:
 
 ```bash
